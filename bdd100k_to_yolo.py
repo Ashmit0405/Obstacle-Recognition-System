@@ -1,7 +1,6 @@
 import json, os, shutil
 from PIL import Image
 
-# Safety-critical classes
 CLASSES = [
     "person",
     "bicycle",
@@ -31,7 +30,6 @@ for img in data:
     if not os.path.exists(img_path):
         continue
 
-    # ✅ FIX: read image size from file
     with Image.open(img_path) as im:
         w, h = im.size
 
@@ -64,4 +62,4 @@ for img in data:
         ) as f:
             f.write("\n".join(labels_out))
 
-print("✅ BDD100K train split converted to YOLO format (FIXED)")
+print("BDD100K train split converted to YOLO format (FIXED)")

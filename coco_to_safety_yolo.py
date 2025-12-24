@@ -6,7 +6,6 @@ CLASSES = [
     "traffic sign","stairs","chair","bench","door","pole"
 ]
 
-# COCO category name → our class id
 COCO_MAP = {
     "person": 0,
     "bicycle": 1,
@@ -66,4 +65,4 @@ for img_id, anns in img_to_anns.items():
         ) as f:
             f.write("\n".join(labels))
 
-print("✅ COCO merged into safety_dataset")
+print("COCO merged into safety_dataset")

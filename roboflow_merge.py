@@ -1,13 +1,12 @@
 import os, shutil
 
-# Roboflow YOLO folders
-RF_IMG = "stairs-detection-1/train/images"
-RF_LBL = "stairs-detection-1/train/labels"
+RF_IMG = "stairs-1/train/images"
+RF_LBL = "stairs-1/train/labels"
 
 OUT_IMG = "safety_dataset/images/train"
 OUT_LBL = "safety_dataset/labels/train"
 
-STAIRS_CLASS_ID = 7  # our global class id
+STAIRS_CLASS_ID = 7 
 
 for lbl in os.listdir(RF_LBL):
     img = lbl.replace(".txt", ".jpg")
@@ -32,4 +31,4 @@ for lbl in os.listdir(RF_LBL):
     with open(os.path.join(OUT_LBL, lbl), "w") as f:
         f.write("\n".join(new_lines))
 
-print("✅ Roboflow hazards merged")
+print("Roboflow hazards merged")

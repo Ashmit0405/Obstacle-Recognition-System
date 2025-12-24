@@ -30,4 +30,4 @@ for img in val_images:
     shutil.move(src_img, os.path.join(IMG_VAL, img))
     shutil.move(src_lbl, os.path.join(LBL_VAL, lbl))
 
-print(f"✅ Split complete: {val_count} images moved to validation set")
+print(f"Split complete: {val_count} images moved to validation set")

@@ -12,7 +12,7 @@ count = 0
 for img in images:
     lbl = img.replace(".jpg", ".txt")
     lbl_path = os.path.join(LBL_DIR, lbl)
-    
+
     if not os.path.exists(lbl_path):
         continue
 
@@ -32,4 +32,4 @@ for img in images:
                 )
                 count += 1
 
-print(f"✅ Oversampled stairs: {count} new samples added")
+print(f"Oversampled stairs: {count} new samples added")
