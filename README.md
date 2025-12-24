@@ -1,3 +1,16 @@
+# OBSTACLE-RECOGNITION-SYSTEM
+This project implements a multi-model perception system for indoor and outdoor navigation assistance, designed to be robust, low-latency, and safety-oriented.
+Instead of relying on a single monolithic model, the system decomposes perception into specialized, cooperating modules, each responsible for a specific aspect of scene understanding and then uses agentic-ai to help assist with the directions.
+
+The architecture prioritizes:
+- real-time performance
+- robustness to edge cases
+- graceful degradation
+- modular extensibility
+
+#### Note - The given repository is only the setup for the object-detection and yolo fine tuning part and not the full project.
+
+Setup
 ## CELL 1
 ```bash
 !pip install -q ultralytics tqdm
