@@ -21,8 +21,8 @@ COCO_MAP = {
     "traffic light": 6
 }
 
-COCO_IMG = "coco/train2017"
-COCO_ANN = "coco/annotations/instances_train2017.json"
+COCO_IMG = "train2017"
+COCO_ANN = "annotations/instances_train2017.json"
 
 OUT_IMG = "safety_dataset/images/train"
 OUT_LBL = "safety_dataset/labels/train"
